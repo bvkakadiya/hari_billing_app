@@ -14,8 +14,8 @@ class Navbar extends Component {
               }}
               className="col s5 brand-logo center black-text"
             >
-              <i className="material-icons">calendar_today</i>
-              Report Generator
+              <i className="material-icons">dashboard</i>
+              Hari Billing Portal
             </Link>
           </div>
         </nav>

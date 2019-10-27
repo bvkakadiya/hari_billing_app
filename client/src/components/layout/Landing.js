@@ -8,7 +8,7 @@ class Landing extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-              <span style={{ fontFamily: "monospace" }}>Report Generator</span> 
+              <span style={{ fontFamily: "monospace" }}>Hari Billing Portal</span> 
             </h4>
             <p className="flow-text grey-text text-darken-1">
               We will be back soon!

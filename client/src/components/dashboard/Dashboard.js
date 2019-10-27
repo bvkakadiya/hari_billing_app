@@ -20,7 +20,7 @@ class Dashboard extends Component {
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
                 You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>Report Generator</span> App 👏
+                <span style={{ fontFamily: "monospace" }}>Hari Billing Portal</span> App 👏
               </p>
             </h4>
             <button

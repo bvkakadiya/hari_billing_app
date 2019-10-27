@@ -4,7 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const passport = require("passport");
 const path = require('path');
-const users = require("./routes/api/users");
+const users = require("./server/routes/api/users");
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use(
 app.use(bodyParser.json());
 
 // DB Config
-const db = require("./config/keys").mongoURI;
+const db = require("./server/config/keys").mongoURI;
 
 // Connect to MongoDB
 mongoose
@@ -32,7 +32,7 @@ mongoose
 app.use(passport.initialize());
 
 // Passport config
-require("./config/passport")(passport);
+require("./server/config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
@@ -54,3 +54,4 @@ app.get('*', (req, res) => {
 const port = process.env.PORT || 5000;
 //start server
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
+console.log(db)
