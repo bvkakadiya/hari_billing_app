@@ -1,1 +1,2 @@
-This is Billing Web Application which provide you to make your own billing form using custom component.
+## Reference for Auth
+https://github.com/rishipr/mern-auth

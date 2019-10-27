@@ -1,38 +1,27 @@
 {
-    "name": "mean-contactlist-angular2",
-    "version": "0.0.0",
-    "license": "MIT",
-    "engines": {
-        "node": "12.13.0"
-    },
-    "scripts": {
-      "ng": "ng",
-      "start": "node server.js"
-    },
-    "private": true,
-    "dependencies": {
-     "body-parser": "^1.18.3",
-      "core-js": "^2.5.4",
-      "express": "^4.16.3",
-      "mongodb": "^3.1.1",
-      "rxjs": "^6.0.0",
-      "zone.js": "^0.8.26"
-    },
-    "devDependencies": {
-      "@types/jasmine": "~2.8.6",
-      "@types/jasminewd2": "~2.0.3",
-      "@types/node": "~8.9.4",
-      "codelyzer": "~4.2.1",
-      "jasmine-core": "~2.99.1",
-      "jasmine-spec-reporter": "~4.2.1",
-      "karma": "~1.7.1",
-      "karma-chrome-launcher": "~2.2.0",
-      "karma-coverage-istanbul-reporter": "~2.0.0",
-      "karma-jasmine": "~1.1.1",
-      "karma-jasmine-html-reporter": "^0.2.2",
-      "protractor": "~5.3.0",
-      "ts-node": "~5.0.1",
-      "tslint": "~5.9.1",
-      "typescript": "~2.7.2"
-    }
+  "name": "report-generator",
+  "version": "1.0.0",
+  "description": "Report Generator App",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.11",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.9.0"
   }
+}
